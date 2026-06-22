@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Generate Image</title>
 
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>CHITRA AI Generator</h1>
+
+<textarea
+id="prompt"
+placeholder="Describe your image..."
+></textarea>
+
+<select id="style">
+<option>Realistic</option>
+<option>Anime</option>
+<option>3D Render</option>
+<option>Cinematic</option>
+</select>
+
+<button onclick="generateImage()">
+Generate
+</button>
+
+<div id="result"></div>
+
+</div>
+
+<script src="/static/js/script.js"></script>
+
+</body>
+</html>
